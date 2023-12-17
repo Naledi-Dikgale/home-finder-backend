@@ -10,9 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_17_185159) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_17_192304) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "for_sale_properties", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.integer "price"
+    t.integer "beds"
+    t.integer "baths"
+    t.integer "garages"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "images", force: :cascade do |t|
     t.bigint "rental_property_id", null: false

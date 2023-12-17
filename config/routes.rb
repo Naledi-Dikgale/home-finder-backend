@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
+      get 'for_sale_properties/index'
+      get 'for_sale_properties/show'
       get 'images/index'
       get 'location_prices/index'
       get 'property_types/index'
