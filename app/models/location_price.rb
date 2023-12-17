@@ -1,0 +1,2 @@
+class LocationPrice < ApplicationRecord
+end
