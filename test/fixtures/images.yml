@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rental_property: one
+  image_url: MyString
+
+two:
+  rental_property: two
+  image_url: MyString

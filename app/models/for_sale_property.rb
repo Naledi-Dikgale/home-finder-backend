@@ -1,0 +1,2 @@
+class ForSaleProperty < ApplicationRecord
+end
